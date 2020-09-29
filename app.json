@@ -9,7 +9,7 @@
         },
         "ALTER": {
             "description": "V2fly alterId",
-            "value": "128"
+            "value": 128
         },
         "PATHKEY": {
             "description": "V2fly ws path",
