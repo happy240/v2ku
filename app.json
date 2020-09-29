@@ -5,18 +5,18 @@
     "env": {
         "UUID": {
             "description": "V2Ray UUID",
-            "value": "ad806487-2d26-4636-98b6-ab85cc8521f7"
+            "value": "a8a5dc2a-536f-40ae-a461-d062bae4f78a"
         },
         "ALTER": {
             "description": "V2fly alterId",
-            "value": "64"
+            "value": "128"
         },
         "PATHKEY": {
             "description": "V2fly ws path",
-            "value": "/"
+            "value": "/ray"
         }
     },
     "website": "https://abluex.com/",
-    "repository": "https://github.com/enxier/v2fly-heroku",
+    "repository": "https://github.com/happy240/v2fly-heroku",
     "stack": "container"
 }
