@@ -8,7 +8,7 @@ install -m 755 /tmp/v2ray/v2ray /usr/local/bin/v2ray
 install -m 755 /tmp/v2ray/v2ctl /usr/local/bin/v2ctl
 
 # Remove temporary directory
-rm -rf /tmp/v2ray
+# rm -rf /tmp/v2ray
 
 # V2Ray new configuration
 install -d /usr/local/etc/v2ray
