@@ -14,32 +14,32 @@ install -m 755 /tmp/v2ray/v2ctl /usr/local/bin/v2ctl
 install -d /usr/local/etc/v2ray
 cat << EOF > /usr/local/etc/v2ray/config.json
 {
-    "inbounds": [
-        {
-            "port": $PORT,
-            "protocol": "vmess",
-            "settings": {
-                "clients": [
-                    {
-                        "id": "$UUID",
-                        "alterId": $ALTER
-                    }
-                ],
-                "disableInsecureEncryption": true
-            },
-            "streamSettings": {
-                "network": "ws",
-                "wsSettings": {
-                    "path": "$PATHKEY"
-                }
-            }
+  "inbounds":[
+    {
+      "port": 443,
+      "protocol": "vmess",
+      "settings":{
+        "clients":[
+          {
+            "id": "$UUID",
+            "alterId": $ALTER
+          }
+        ],
+        "disableInsecureEncryption": true
+      },
+      "streamSettings":{
+        "network": "ws",
+        "wsSettings":{
+          "path": "$PATHKEY"
         }
-    ],
-    "outbounds": [
-        {
-            "protocol": "freedom"
-        }
-    ]
+      }
+    }
+  ],
+  "outbounds":[
+    {
+      "protocol": "freedom"
+    }
+  ]
 }
 EOF
 
